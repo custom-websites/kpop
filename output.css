@@ -679,13 +679,57 @@ video {
   }
 }
 
-.mt-10{
-  margin-top: 2.5rem;
+.m-auto{
+  margin: auto;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.ml-10{
+  margin-left: 2.5rem;
+}
+
+.mb-32{
+  margin-bottom: 8rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-72{
+  width: 18rem;
+}
+
+.border-t{
+  border-top-width: 1px;
+}
+
+.border-gray-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-emerald-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(110 231 183 / var(--tw-border-opacity));
 }
 
 .bg-slate-700{
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .text-center{
@@ -700,6 +744,16 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -722,6 +776,11 @@ video {
 .text-emerald-100{
   --tw-text-opacity: 1;
   color: rgb(209 250 229 / var(--tw-text-opacity));
+}
+
+.text-teal-400{
+  --tw-text-opacity: 1;
+  color: rgb(45 212 191 / var(--tw-text-opacity));
 }
 
 :root {
@@ -769,4 +828,72 @@ header h1 {
   height: 400px;
   display: grid;
   grid-template-columns: 33.333333% 33.333333% 33.333333%;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+nav ul {
+  list-style: none;
+  display: -ms-flexbox;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+nav ul a {
+  padding: 0.355rem 1rem;
+  font-size: 22px;
+  text-decoration: none;
+  color: var(--c0);
+  transition: 0.5s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: var(--c2);
+}
+
+/* Underline From Center */
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: rgb(209 250 229);
+  height: 4px;
+  transition-property: left, right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+hr {
+  color: rgb(110 231 183);
+  position: relative;
+  top: 20px;
+  border: none;
 }
